@@ -10,6 +10,9 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 
+localStorage.setItem('token', '123')
+console.log('在main中设置了token')
+
 new Vue({
   router,
   store,

@@ -9,7 +9,7 @@
           <span slot="title">About</span>
         </el-menu-item>
         <el-menu-item index="/sub-vue/micro/test">
-          <span slot="title">Test</span>
+          <span slot="title">Micro-Test</span>
         </el-menu-item>
       </el-menu>
     </el-aside>

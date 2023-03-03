@@ -1,5 +1,6 @@
 import { registerMicroApps, start } from 'qiankun'
 import store from '@/store'
+import router from '@/router'
 
 /* registerMicroApps()用法
 注册微应用的基础配置信息。当浏览器 url 发生变化时，会自动检查
@@ -14,7 +15,8 @@ registerMicroApps([
     activeRule: '/sub-vue/', // 当配置为字符串时会直接跟 url 中的路径部分做前缀匹配，匹配成功表明当前应用会被激活。
     props: {
       // 此处将主应用需要传递给微应用的数据
-      store
+      store,
+      router
     }
   }
 ])
